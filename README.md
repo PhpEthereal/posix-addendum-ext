@@ -88,4 +88,7 @@ sudo make install
 
 Add `extension=posix_addendum.so` to your `php.ini` file or to file `40_posix_addendum.ini` under your `php.d` directory.
 
+## License
+
+This project is licensed under the MIT license.
 
