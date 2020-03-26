@@ -49,7 +49,7 @@ Example:
 ```php
 
 register_shutdown_function(function () {
-  echo "awesome exit function\n";
+  echo "awesome shutdown function\n";
 });
 
 class Foo
@@ -65,12 +65,27 @@ $foo = new Foo;
 posix_addendum_immediate_exit(0);
 
 ```
-The above program will output nothing and retruns with status 0. However, if you replace `posix_addendum_immediate_exit(0)` with `exit(0)` the program will output:
+The above program will output nothing and retruns with status 0. However, if you replace `posix_addendum_immediate_exit(0)` with `exit(0)` the program will produce:
 ```
-awesome exit function
+awesome shutdown function
 awesome destructor
 
 ```
 
+## Installing
+
+Extension `posix_addendum` can be installed with the following commands.
+
+```sh
+wget https://github.com/PhpPlaisio/posix-addendum-ext/archive/master.zip
+unzip master.zip
+cd posix-addendum-ext-master
+phpize
+./configure
+make
+sudo make install
+```
+
+Add `extension=posix_addendum.so` to your `php.ini` file or to file `40_posix_addendum.ini` under your `php.d` directory.
 
 
