@@ -1,10 +1,10 @@
 # PHP POSIX Addendum Extension
 
-A PHP extension providing POSIX functions missing the official [POSIX extension](https://www.php.net/manual/book.posix.php).
+A PHP extension providing POSIX functions missing in the official [POSIX extension](https://www.php.net/manual/book.posix.php).
 
 ## Functions
 
-Currently this extension provides the following POSTIX funtions.
+Currently, this extension provides the following POSTIX funtions.
 
 ### `int dup2(int oldfd, int newfd)`
 
